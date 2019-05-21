@@ -1,0 +1,110 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jessica Younker"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson"
+    },
+    {
+      "id": 3,
+      "name": "Zoe LeBlanc"
+    },
+    {
+      "id": 4,
+      "name": "Blaise Roberts"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Circle Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "10101 Binary Court"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles"
+    },
+    {
+      "id": 3,
+      "name": "Angus"
+    },
+    {
+      "id": 6,
+      "name": "Checkers"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "phone": "865-865-8685",
+      "name": "Ryan Tanay"
+    },
+    {
+      "id": 2,
+      "phone": "415-415-4145",
+      "name": "Emma Beaton"
+    },
+    {
+      "id": 3,
+      "phone": "615-615-6165",
+      "name": "Dani Adkins"
+    }
+  ],
+  "animalOwners": [
+    {
+      "id": 1,
+      "animal": "1",
+      "name": "1"
+    },
+    {
+      "id": 2,
+      "animal": "2",
+      "name": "2"
+    },
+    {
+      "id": 3,
+      "animal": "3",
+      "name": "3"
+    },
+    {
+      "id": 4,
+      "animal": "4",
+      "name": "1"
+    },
+    {
+      "id": 5,
+      "animal": "5",
+      "name": "2"
+    },
+    {
+      "id": 6,
+      "animal": "6",
+      "name": "3"
+    },
+    {
+      "id": 7,
+      "animal": "1",
+      "name": "2"
+    },
+    {
+      "id": 8,
+      "animal": "2",
+      "name": "3"
+    },
+    {
+      "id": 9,
+      "animal": "3",
+      "name": "1"
+    }
+  ]
+}
