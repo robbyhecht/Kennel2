@@ -32,27 +32,33 @@
   "animals": [
     {
       "id": 1,
-      "name": "Doodles"
+      "name": "Doodles",
+      "breed": "Schnoodle"
     },
     {
       "id": 2,
-      "name": "Jack"
+      "name": "Jack",
+      "breed": "Jack Russell"
     },
     {
       "id": 3,
-      "name": "Angus"
+      "name": "Angus",
+      "breed": "Steak"
     },
     {
       "id": 4,
-      "name": "Henley"
+      "name": "Henley",
+      "breed": "LL Bean"
     },
     {
       "id": 5,
-      "name": "Derkins"
+      "name": "Derkins",
+      "breed": "Weird Mutt"
     },
     {
       "id": 6,
-      "name": "Checkers"
+      "name": "Checkers",
+      "breed": "Board Game"
     }
   ],
   "owners": [

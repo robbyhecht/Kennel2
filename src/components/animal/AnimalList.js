@@ -1,33 +1,39 @@
 import React, { Component } from 'react'
+import AnimalItem from './AnimalItem'
 
 
 class AnimalList extends Component {
-
-    handleClick = (id) => {
-        // console.log("click", event, this.props.animal.id)
-        this.props.deleteAnimal(id)
-    }
 
     render() {
         return (
             <React.Fragment>
 
-                <h2 className="kennel">Kennel Animals</h2>
-                <section className="animals kennel">
-
+            <h2 className="heading">All Animals</h2>
+            
+            <section>
+                <div className="card-container">
                 {
-                    this.props.animals.map(animal => 
-                        <div key={animal.id}>
-                            {animal.name}<br />
-                            {animal.breed}<br />
-                            <button onClick={() => this.props.deleteAnimal(animal.id)}>DELETE</button>
-                        </div>
-                    )
+                    this.props.animals.map((animal) => {
+                        return <AnimalItem key={animal.id} animal={animal} deleteAnimal={this.props.deleteAnimal} />
+                    })
                 }
-                </section>
+                </div>
+            </section>
+
+            <br />
+
+            <div className="animalButton">
+                <button type="button"
+                        className="btn btn-success"
+                        onClick={() => {
+                            this.props.history.push("/animals/new")}
+                        }>
+                    Admit Animal
+                </button>
+            </div>
 
             </React.Fragment>
-        );
+        )
     }
 }
 

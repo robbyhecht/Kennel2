@@ -17,6 +17,16 @@ export default {
             "Content-Type": "application/json"
           },
     }).then(e => e.json())
+  },
+
+  post(resource, newItem) {
+    return fetch(`${remoteURL}/${resource}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newItem)
+    }).then(data => data.json())
   }
   
 }

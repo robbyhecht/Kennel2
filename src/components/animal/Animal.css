@@ -1,0 +1,68 @@
+.animals {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px;
+}
+
+.icon--dog {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.icon-detail {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 13rem;
+    margin: 10px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.detail-card {
+    width: 25rem;
+    margin: 10px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-link {
+    margin: 12px 0 0 0;
+    font-size: 0.7em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animalButton {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 10px 0;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+}
