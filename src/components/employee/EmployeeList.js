@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import EmployeeItem from './EmployeeItem'
+import './../../App.css'
+
 
 
 class EmployeeList extends Component {
@@ -13,7 +15,7 @@ class EmployeeList extends Component {
         return (
             <React.Fragment>
 
-                <h2 className="kennel">Kennel Employees</h2>
+                <h2 className="kennel heading">Kennel Employees</h2>
                 <section className="employees kennel">
 
                 {

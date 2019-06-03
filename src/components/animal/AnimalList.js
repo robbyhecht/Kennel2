@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import AnimalItem from './AnimalItem'
+import './../../App.css'
 
 
 class AnimalList extends Component {
@@ -14,7 +15,7 @@ class AnimalList extends Component {
                 <div className="card-container">
                 {
                     this.props.animals.map((animal) => {
-                        return <AnimalItem key={animal.id} animal={animal} deleteAnimal={this.props.deleteAnimal} />
+                        return <AnimalItem key={animal.id} {...this.props} animal={animal} deleteAnimal={this.props.deleteAnimal} />
                     })
                 }
                 </div>

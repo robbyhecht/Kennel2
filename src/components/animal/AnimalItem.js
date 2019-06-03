@@ -19,11 +19,6 @@ export default class AnimalItem extends Component {
 
             <React.Fragment>
 
-            <article>
-                {/* <h3>{this.props.animal.name}</h3> */}
-
-            </article>
-
             <section className="animal">
                 <div key={ this.props.animal.id } className="card">
                     <div className="card-body">
@@ -32,7 +27,17 @@ export default class AnimalItem extends Component {
                             { this.props.animal.name }
                         </h4>
                         <div className="button-container">
-                            <button onClick={() => {
+                            <button // edit button
+                                type="button"
+                                className="btn btn-success"
+                                onClick={() => {
+                                    this.props.history.push(`/animals/${this.props.animal.id}/edit`);
+                                }}>Edit
+                            </button>
+                        </div>
+                        <div className="button-container">
+                            <button // delete button
+                                onClick={() => {
                                         this.setState(
                                             { saveDisabled: true },
                                             () => this.props.deleteAnimal(this.props.animal.id)
@@ -40,7 +45,8 @@ export default class AnimalItem extends Component {
                                     }
                                 }
                                 disabled={ this.state.saveDisabled }
-                                className="card-link">Delete</button>
+                                className="card-link">Delete
+                            </button>
                         </div>
                         <div className="button-container">
                             <Link className="nav-link" to={`/animals/${this.props.animal.id}`}>Details</Link>

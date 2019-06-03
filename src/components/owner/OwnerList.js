@@ -7,7 +7,7 @@ class OwnerList extends Component {
         return (
             <React.Fragment>
 
-                <h2 className="kennel">Kennel Owners</h2>
+                <h2 className="kennel heading">Kennel Owners</h2>
                 <section className="owners kennel">
 
                 {

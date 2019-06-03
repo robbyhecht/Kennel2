@@ -3,11 +3,6 @@
     justify-content: space-evenly;
 }
 
-.heading {
-    text-align: center;
-    margin: 30px;
-}
-
 .icon--dog {
     width: 60px;
     height: 60px;
@@ -22,7 +17,7 @@
 }
 
 .card {
-    width: 13rem;
+    width: 15rem;
     margin: 10px;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }

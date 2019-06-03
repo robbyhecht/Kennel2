@@ -27,6 +27,16 @@ export default {
       },
       body: JSON.stringify(newItem)
     }).then(data => data.json())
+  },
+
+  put(resource, editedItem) {
+    return fetch(`${remoteURL}/${resource}/${editedItem.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedItem)
+    }).then(data => data.json());
   }
   
 }

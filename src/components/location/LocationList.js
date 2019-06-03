@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-
+import './../../App.css'
 
 export default class LocationList extends Component {
     render() {
         return (
             <React.Fragment>
 
-                <h2 className="kennel">Kennel Locations</h2>
+                <h2 className="kennel heading">Kennel Locations</h2>
                 <section className="locations kennel">
 
                     {
